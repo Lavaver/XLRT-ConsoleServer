@@ -16,8 +16,11 @@ namespace ConsoleServer
 
             UnzipJDK();
 
+            await CheckEula();
+
             await BootServerAsync();
         }
+
 
 
 
@@ -40,7 +43,7 @@ namespace ConsoleServer
                 }
 
                 // 创建输出目录
-                string outputDirectory = "TempJDK";
+                string outputDirectory = "TempJRE";
                 Directory.CreateDirectory(outputDirectory);
 
                 // 使用 ZipArchive 打开内嵌资源
@@ -68,7 +71,34 @@ namespace ConsoleServer
                 }
             }
 
-            Console.WriteLine("释放临时 JDK 环境完成。");
+            Console.WriteLine("释放临时 JRE 环境完成。");
+        }
+
+        static async Task CheckEula()
+        {
+            string eulaFilePath = "eula.txt";
+
+            // 检查是否存在eula.txt文件
+            if (File.Exists(eulaFilePath))
+            {
+                Console.WriteLine("eula.txt 文件已存在。跳过");
+            }
+            else
+            {
+                // 如果文件不存在，则创建一个新的eula.txt文件并写入内容
+                try
+                {
+                    using (StreamWriter writer = new StreamWriter(eulaFilePath))
+                    {
+                        await writer.WriteLineAsync("eula=true");
+                    }
+                    Console.WriteLine("已为你自动同意 Minecraft Eula ，请您在使用本加载器时注意遵守 Eula 条款内容！");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"创建 eula.txt 文件时发生错误：{ex.Message}");
+                }
+            }
         }
 
         static async Task BootServerAsync()
@@ -96,8 +126,8 @@ namespace ConsoleServer
 
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
-                FileName = ".\\TempJDK\\jdk-17\\bin\\java.exe",
-                Arguments = "-jar Boot.zip",
+                FileName = ".\\TempJRE\\8\\bin\\java.exe",
+                Arguments = "-jar Boot.zip nogui",
                 RedirectStandardOutput = true,
                 RedirectStandardInput = true,
                 UseShellExecute = false,
@@ -118,7 +148,7 @@ namespace ConsoleServer
                     Console.WriteLine(e.Data);
 
                     // 检查日志消息是否包含指定的关键字
-                    if (e.Data.Contains("ThreadedAnvilChunkStorage: All dimensions are saved"))
+                    if (e.Data.Contains("Saving chunks for level 'world'/overworld"))
                     {
                         // 如果日志消息包含关键字，则执行清理操作
                         await CreateDelBat();
@@ -148,7 +178,7 @@ namespace ConsoleServer
                 "title XLRT ConsoleServer Cleanup Batch",
                 "echo Cleaning temporary files in progress. Please do not close the window during the entire cleaning process! The window will be safely closed automatically upon completion.",
                 "ping 127.0.0.1 -n 10 > nul",
-                "rd /s /q \"./TempJDK\"",
+                "rd /s /q \"./TempJRE\"",
                 "ping 127.0.0.1 -n 1 > nul",
                 "del /q \"Boot.zip\"",
                 "ping 127.0.0.1 -n 1 > nul",
