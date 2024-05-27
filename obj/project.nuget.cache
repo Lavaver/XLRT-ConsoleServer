@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vlHLQBZgEPMZbfIG+qMMUgQZ/kj9SlRdNJ8PKkbOxVSTXZCDYc/PE+noGidOcDb/UQTyuMFkr0Azu27H4rNuSg==",
+  "dgSpecHash": "Of0Xmt4+Ca4=",
   "success": true,
   "projectFilePath": "D:\\repos\\ConsoleServer\\ConsoleServer.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\vvv\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
-    "C:\\Users\\vvv\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.4\\microsoft.netcore.app.runtime.win-x64.8.0.4.nupkg.sha512",
-    "C:\\Users\\vvv\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.4.nupkg.sha512",
-    "C:\\Users\\vvv\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.4\\microsoft.aspnetcore.app.runtime.win-x64.8.0.4.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

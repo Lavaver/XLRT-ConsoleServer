@@ -18,17 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Boot.zip" />
-    <None Remove="Temp.zip" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="minecraft.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Boot.zip" />
-    <EmbeddedResource Include="Temp.zip" />
   </ItemGroup>
 
 </Project>

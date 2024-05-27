@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|D:\\repos\\ConsoleServer\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|D:\\repos\\ConsoleServer\\consoleserver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|solutionrelative:consoleserver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|d:\\repos\\consoleserver\\license||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FB4582A0-B598-4030-9AB5-63C39AF49D49}|ConsoleServer.csproj|solutionrelative:license||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,25 +31,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "README.md",
-              "DocumentMoniker": "D:\\repos\\ConsoleServer\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "D:\\repos\\ConsoleServer\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-05-12T02:12:55.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConsoleServer",
-              "DocumentMoniker": "D:\\repos\\ConsoleServer\\ConsoleServer.csproj",
-              "RelativeDocumentMoniker": "ConsoleServer.csproj",
-              "ToolTip": "D:\\repos\\ConsoleServer\\ConsoleServer.csproj",
-              "RelativeToolTip": "ConsoleServer.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-11T23:34:23.092Z"
+              "Title": "LICENSE",
+              "DocumentMoniker": "D:\\repos\\ConsoleServer\\LICENSE",
+              "RelativeDocumentMoniker": "LICENSE",
+              "ToolTip": "D:\\repos\\ConsoleServer\\LICENSE",
+              "RelativeToolTip": "LICENSE",
+              "ViewState": "AQIAAEgAAAAAAAAAAADwv1kAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-23T12:02:28.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,8 +49,9 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\repos\\ConsoleServer\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAKsAAAAAAAAAAAA0wK8AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "",
               "WhenOpened": "2024-05-11T22:48:21.024Z",
               "EditorCaption": ""
             }
